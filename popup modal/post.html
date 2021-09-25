@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main{
+            width: 40%;
+            height: 90%;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            position: relative;
+        }
+        .close{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: rgb(247, 77, 77);
+            position: absolute;
+            top: -5%;
+            right: -2%;
+            border: 2px solid rgb(87, 84, 84);
+        }
+        .close>i{
+            font-size: 3rem;
+            color: white;
+        }
+        .main>input{
+            width: 90%;
+            height: 10%;
+            padding-left: 5%;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: sans-serif;
+            border: 1px solid black;
+        }
+        .main>textarea{
+            width: 90%;
+            height: 40%;
+            border: 1px solid black;
+        }
+        button{
+            font-size: 1.4rem;
+            border-radius: 40px;
+            width: 45%;
+            height: 10%;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            background-image: linear-gradient(to right,green, rgba(0, 162, 255, 0.61));
+        }
+    </style>
+    <body>
+        <div class="main">
+            <div class="close">
+                <i class="fas fa-times-circle"></i>
+            </div>
+
+            <!-- <input type="text" placeholder="caption"> -->
+            <input type="text" placeholder="link">
+            <textarea name="caption" id="caption" ></textarea>
+
+            <button>Post</button>
+
+        </div>
+    </body>
+</html>
